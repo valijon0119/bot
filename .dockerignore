@@ -1,0 +1,13 @@
+# Docker build — keraksiz fayllar tashlanadi
+.env
+.env.*
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.venv
+venv
+*.md
+.github
