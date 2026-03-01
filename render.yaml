@@ -1,0 +1,9 @@
+# Render.com — Telegram bot (Background Worker)
+# Dashboard da Environment Variables: BOT_TOKEN, ADMIN_GROUP_LINK
+
+services:
+  - type: worker
+    name: telegram-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
