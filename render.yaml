@@ -1,0 +1,16 @@
+services:
+  - type: worker
+    name: telegram-file-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+        value: 8271555595:AAFGclSWBtviAFXJyb6TYQzvQ-J9cxA4qpo
+      - key: ADMIN_GROUP_LINK
+        sync: false
+        value: https://t.me/studentstiia
